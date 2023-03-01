@@ -1,0 +1,8 @@
+body{
+    background-color:aliceblue;
+}
+
+/* *는 css선택자로 모든 것에 적용할 때 씀 */
+*{ 
+    font-family: 'Single Day', cursive;
+}

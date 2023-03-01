@@ -1,0 +1,61 @@
+<!-- HTML(Hypertext Markup Language, 하이퍼텍스트 마크업 언어)
+    : 웹 브라우저에서 문서 및 웹 페이지가 표시되는 방법을 규정하는 언어이며,
+    어떠한 웹사이트에서든 블록(block)을 구성하는 데 사용되는 언어이기도 하다.
+    HTML을 이용하면 웹사이트의 구조를 만들 수 있다. -->
+<!-- CSS(Cascading Style Sheets, 캐스케이딩 스타일 시트)
+    : HTML로 만들어진 문서의 컬러, 폰트, 스타일, 레이아웃, 반응형 특징 등의
+    스타일을 지정하는 방식을 규정하는 스타일 시트 언어이다. 
+    CSS는 웹사이트를 보다 매력적으로 만드는 기능을 제공한다. -->
+<!-- JavaScript(자바스크립트)
+    : 웹사이트가 로딩된 이후에 CSS와 HTML 구성요소들의 동작을 변경할 수 있게 해주며,
+    이를 통해서 웹사이트를 보다 인터랙티브하게 만들고 사용자의 참여율도 높일 수 있다. -->
+<!-- JavaScript에서 함수를 정의할 때 arrow 방식
+    const multiply = (a,b) => {
+        return a * b;
+    } parameter: a,b
+-->
+
+
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/default.css">
+        <link rel="stylesheet" href="./css/main.css"> 
+        <link rel="stylesheet" href="./css/qna.css">
+        <link rel="stylesheet" href="./css/animation.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <section id="main" class="mx-auto mt-5 py-4 px-3">
+                <h1>십이간지로 알아보는 연애유형</h1>
+                <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+                    <img src="./img/main.png" class="img-fluid" alt="mainImage">
+                </div>
+                <p>
+                    연애유형검사 사이트입니당<br>
+                    아래의 시작하기 버튼을 눌러 시작해주세요<br>
+                </p>
+                <button type="button" class="btn btn-outline-info mt-2" 
+                onclick="js:begin()">시작하기</button>
+            </section>
+
+            <section id="qna">
+                <p>페이지 넘어가나</p>
+            </section>
+
+            <section id="result">
+
+            </section>
+            <script src="./js/start.js" charset="utf-8"></script>
+        </div>
+    </body>
+</html>
